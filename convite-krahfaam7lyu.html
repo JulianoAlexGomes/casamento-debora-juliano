@@ -3,35 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#e9dcc6">
+<meta name="theme-color" content="#000000">
 <title>Débora &amp; Juliano</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
-  /* Paleta: terracota, caramelo, bronze envelhecido, marfim, greige, blush e oliva seco */
+  /* Paleta All Black: preto profundo, grafite, prata e branco (nomes das variáveis mantidos) */
   :root {
-    --terracotta: #b0492c;
-    --terracotta-deep: #8e3a22;
-    --caramel: #c67a3e;
-    --envelope: #e9dcc6;
-    --bronze: #8a7152;
-    --bronze-light: #b9a07c;
-    --olive: #7c7a58;
-    --blush: #ecd6c4;
-    --marigold: #d9953a;
-    --ivory: #fbf8f2;
-    --paper: #f6f1e8;
-    --paper-2: #ebe3d5;
-    --ink: #4f3a2e;
-    --text: #5e4f45;
-    --muted: #8f7d6c;
-    --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .33 0 0 0 0 .26 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-    --fibers: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='360'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.05 .09' numOctaves='3' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .4 0 0 0 0 .32 0 0 0 2.2 -1.35'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
+    --terracotta: #dcdcdc;
+    --terracotta-deep: #a8a8a8;
+    --caramel: #9a9a9a;
+    --envelope: #151515;
+    --bronze: #7a7a7a;
+    --bronze-light: #6e6e6e;
+    --olive: #777777;
+    --blush: #cfcfcf;
+    --marigold: #bdbdbd;
+    --ivory: #0a0a0a;
+    --paper: #0d0d0d;
+    --paper-2: #161616;
+    --ink: #f4f4f4;
+    --text: #d2d2d2;
+    --muted: #8c8c8c;
+    --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .5 0 0 0 0 .5 0 0 0 0 .5 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    --fibers: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='360' height='360'%3E%3Cfilter id='f'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.05 .09' numOctaves='3' seed='4'/%3E%3CfeColorMatrix values='0 0 0 0 .85 0 0 0 0 .85 0 0 0 0 .85 0 0 0 2.2 -1.35'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23f)'/%3E%3C/svg%3E");
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    background: #2b211a; color: var(--text);
+    background: #000; color: var(--text);
     font-family: "Cormorant Garamond", Georgia, serif;
     -webkit-font-smoothing: antialiased; overflow-x: hidden;
   }
@@ -40,12 +40,12 @@
   .script { font-family: "Pinyon Script", cursive; font-weight: 400; }
   .caps { text-transform: uppercase; letter-spacing: .32em; }
 
-  /* hot stamping em cobre */
+  /* hot stamping em prata */
   .foil {
-    background: linear-gradient(100deg, #7a4a2a 0%, #c4865a 18%, #f1d2b4 32%, #a2603a 48%, #dba57e 64%, #85502e 82%, #c98e62 100%);
+    background: linear-gradient(100deg, #8a8a8a 0%, #cfcfcf 18%, #ffffff 32%, #9e9e9e 48%, #e6e6e6 64%, #7c7c7c 82%, #d4d4d4 100%);
     background-size: 200% 100%;
     -webkit-background-clip: text; background-clip: text; color: transparent;
-    filter: drop-shadow(0 1px 0 rgba(255,255,255,.7)) drop-shadow(0 -.5px 0 rgba(90,55,20,.3));
+    filter: drop-shadow(0 1px 0 rgba(0,0,0,.8)) drop-shadow(0 -.5px 0 rgba(255,255,255,.12));
     animation: sheen 9s ease-in-out infinite;
     /* folga para as voltas da caligrafia: o dourado só pinta dentro da caixa do texto */
     padding: .25em .4em; margin: -.25em -.4em;
@@ -53,12 +53,12 @@
   }
   @keyframes sheen { 50% { background-position: 100% 0; } }
   /* impressão tipográfica: tinta levemente afundada no papel */
-  .press { text-shadow: 0 1px 0 rgba(255,255,255,.7), 0 -.5px 0 rgba(90,50,30,.14); }
+  .press { text-shadow: 0 1px 0 rgba(0,0,0,.8), 0 -.5px 0 rgba(255,255,255,.1); }
 
   /* ============ ENVELOPE ============ */
   #envelope {
     position: fixed; inset: 0; z-index: 50;
-    background: #2b211a; cursor: pointer; overflow: hidden;
+    background: #000; cursor: pointer; overflow: hidden;
     display: flex; align-items: center; justify-content: center;
     perspective: 1600px;
     transition: opacity .8s ease, visibility 0s linear .8s;
@@ -71,31 +71,31 @@
     transform-style: preserve-3d;
   }
 
-  /* papel do envelope: bege com trama fina; detalhes em terracota */
+  /* papel do envelope: preto com trama fina; detalhes em prata */
   .env-back, .pocket, .flap .front {
     background-color: var(--envelope);
     background-image:
       var(--grain),
-      repeating-linear-gradient(0deg, rgba(255,255,255,.03) 0 1px, transparent 1px 3px),
-      linear-gradient(180deg, rgba(255,250,240,.25), rgba(140,100,60,.12));
+      repeating-linear-gradient(0deg, rgba(255,255,255,.025) 0 1px, transparent 1px 3px),
+      linear-gradient(180deg, rgba(255,255,255,.05), rgba(0,0,0,.35));
     background-size: 220px, auto, auto;
     background-blend-mode: soft-light, normal, normal;
   }
-  .env-back { position: absolute; inset: 0; box-shadow: inset 0 0 50px rgba(120,80,40,.22); }
-  .env-back::after { /* forro terracota visível pela boca do envelope */
+  .env-back { position: absolute; inset: 0; box-shadow: inset 0 0 50px rgba(0,0,0,.7); }
+  .env-back::after { /* forro de cetim grafite visível pela boca do envelope */
     content: ""; position: absolute; left: 3%; right: 3%; top: 0; height: 55%;
-    background: repeating-linear-gradient(45deg, rgba(255,230,210,.07) 0 1px, transparent 1px 7px), linear-gradient(180deg, #7e3119, var(--terracotta));
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,.05) 0 1px, transparent 1px 7px), linear-gradient(180deg, #000, #2a2a2a);
     clip-path: polygon(0 0, 100% 0, 50% 100%);
   }
 
   .card {
     position: absolute; left: 4%; width: 92%; top: 3%; height: 94%; z-index: 2;
     background: var(--ivory) var(--grain); background-size: 220px; background-blend-mode: multiply;
-    box-shadow: 0 1px 2px rgba(0,0,0,.2), 0 -8px 24px rgba(60,25,5,.25);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2), 0 -8px 24px rgba(0,0,0,.6);
     display: flex; align-items: center; justify-content: center; text-align: center;
     transition: transform 1.1s cubic-bezier(.3,.7,.2,1);
   }
-  .card::before { content: ""; position: absolute; inset: 12px; border: 1px solid rgba(138,113,82,.45); pointer-events: none; }
+  .card::before { content: ""; position: absolute; inset: 12px; border: 1px solid rgba(210,210,210,.35); pointer-events: none; }
   .card-content { transition: opacity .45s ease; }
   .card-content .k { font-size: calc(var(--w) * .08); color: var(--terracotta); }
   .card-content .nm { font-size: calc(var(--w) * .2); line-height: .95; }
@@ -117,22 +117,22 @@
   }
   .flap-trim { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; }
   .flap-trim path { vector-effect: non-scaling-stroke; stroke-width: 1; }
-  .flap .front::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,240,220,.18), rgba(0,0,0,0) 35%, rgba(90,40,10,.18)); }
+  .flap .front::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(0,0,0,0) 35%, rgba(0,0,0,.35)); }
   .flap .inside {
     transform: rotateX(180deg);
-    background: repeating-linear-gradient(45deg, rgba(255,230,210,.07) 0 1px, transparent 1px 7px), linear-gradient(0deg, #7e3119, var(--terracotta));
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,.05) 0 1px, transparent 1px 7px), linear-gradient(0deg, #000, #2a2a2a);
   }
   .flap-shadow {
     position: absolute; left: 0; right: 0; top: 0; height: 54%; z-index: 3; pointer-events: none;
     clip-path: polygon(0 0, 100% 0, 50% 100%);
-    background: linear-gradient(180deg, transparent 80%, rgba(120,70,30,.28)); filter: blur(2px);
+    background: linear-gradient(180deg, transparent 80%, rgba(0,0,0,.55)); filter: blur(2px);
     transition: opacity .4s ease;
   }
   #envelope.s2 .flap { transform: rotateX(-178deg); }
   #envelope.s2 .flap-shadow { opacity: 0; }
   #envelope.behind .flap { z-index: 1; }
 
-  /* lacre de bronze: acende em círculo e se parte */
+  /* lacre de cera preta: acende em círculo e se parte */
   .seal {
     position: absolute; left: 50%; top: 52%; z-index: 6;
     width: calc(var(--w) * .56); aspect-ratio: 1;
@@ -142,7 +142,7 @@
   @keyframes breathe { 50% { transform: translate(-50%, -50%) scale(1.04); } }
   .seal .half {
     position: absolute; inset: 0;
-    filter: drop-shadow(0 2px 1.5px rgba(40,20,5,.55)) drop-shadow(0 8px 12px rgba(40,20,5,.35));
+    filter: drop-shadow(0 2px 1.5px rgba(0,0,0,.7)) drop-shadow(0 8px 12px rgba(0,0,0,.5)) drop-shadow(0 0 1px rgba(255,255,255,.25));
     transition: transform .9s cubic-bezier(.4,0,.6,1), opacity .5s ease .45s, filter .3s ease;
   }
   .seal svg { width: 100%; height: 100%; display: block; overflow: visible; }
@@ -154,18 +154,18 @@
     pointer-events: none; transform: rotate(-90deg); transition: opacity .5s ease;
   }
   .seal-ring .trace {
-    fill: none; stroke: #fff3dc; stroke-width: 1.8; stroke-linecap: round;
+    fill: none; stroke: #ffffff; stroke-width: 1.8; stroke-linecap: round;
     stroke-dasharray: 100; stroke-dashoffset: 100; opacity: 0;
-    filter: drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 4px #ffd6a0);
+    filter: drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 4px #e8e8e8);
   }
   .seal-ring .fill { fill: url(#sealLight); opacity: 0; transition: opacity .35s ease; }
   .seal-ring .glow-initials {
-    fill: #fff4df; opacity: 0; transition: opacity .45s ease;
-    filter: drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 4px #ffd9a0) drop-shadow(0 0 9px #f0a060);
+    fill: #ffffff; opacity: 0; transition: opacity .45s ease;
+    filter: drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 4px #e6e6e6) drop-shadow(0 0 9px #bdbdbd);
   }
   .seal::before {
     content: ""; position: absolute; inset: -18%; border-radius: 50%; pointer-events: none;
-    background: radial-gradient(circle, rgba(255,236,205,.55) 0%, rgba(240,170,110,.22) 45%, rgba(240,170,110,0) 70%);
+    background: radial-gradient(circle, rgba(255,255,255,.5) 0%, rgba(200,200,200,.2) 45%, rgba(200,200,200,0) 70%);
     opacity: 0; transform: scale(.6); transition: opacity .35s ease, transform .5s ease;
   }
   #envelope.s0 .seal { animation: none; }
@@ -173,7 +173,7 @@
   #envelope.s0f .seal::before { opacity: 1; transform: scale(1); }
   #envelope.s0f .seal-ring .fill { opacity: 1; }
   #envelope.s0f .seal-ring .glow-initials { opacity: 1; }
-  #envelope.s0f .seal .half { filter: brightness(1.18) drop-shadow(0 2px 1.5px rgba(40,20,5,.5)) drop-shadow(0 8px 12px rgba(40,20,5,.3)); }
+  #envelope.s0f .seal .half { filter: brightness(1.6) drop-shadow(0 2px 1.5px rgba(0,0,0,.6)) drop-shadow(0 8px 12px rgba(0,0,0,.4)); }
   #envelope.s1 .seal-ring { opacity: 0; }
   #envelope.s1 .seal::before { opacity: 0; transform: scale(1.6); transition: opacity .7s ease, transform .7s ease; }
   #envelope.s1 .seal .half { transform: scale(1.18); opacity: 0; transition: transform .45s cubic-bezier(.2,.8,.3,1), opacity .4s ease .05s; }
@@ -185,8 +185,8 @@
   #ytWrap { position: fixed; left: -9999px; top: 0; width: 200px; height: 200px; }
   #music {
     position: fixed; z-index: 40; right: max(18px, calc(50vw - 260px + 18px)); bottom: calc(22px + env(safe-area-inset-bottom, 0px));
-    width: 46px; height: 46px; border-radius: 50%; border: 1px solid rgba(255,240,225,.5); cursor: pointer;
-    background: var(--terracotta); color: var(--ivory); box-shadow: 0 4px 14px rgba(70,30,10,.35);
+    width: 46px; height: 46px; border-radius: 50%; border: 1px solid rgba(255,255,255,.5); cursor: pointer;
+    background: var(--terracotta); color: var(--ivory); box-shadow: 0 4px 14px rgba(0,0,0,.6);
     display: flex; align-items: center; justify-content: center;
   }
   #music svg { width: 18px; height: 18px; }
@@ -206,32 +206,32 @@
   .tap-hint {
     position: absolute; left: 0; right: 0; bottom: max(8vh, 40px); z-index: 6;
     text-align: center; color: var(--terracotta); font-size: 15px; opacity: .9;
-    text-shadow: 0 1px 0 rgba(255,255,255,.6);
+    text-shadow: 0 1px 0 rgba(0,0,0,.8);
     animation: blink 2.4s ease-in-out infinite; transition: opacity .3s;
   }
   @keyframes blink { 50% { opacity: .35; } }
   #envelope.s0 .tap-hint { opacity: 0; animation: none; }
 
   /* ============ CONVITE ============ */
-  main { max-width: 520px; margin: 0 auto; background: var(--paper); position: relative; box-shadow: 0 0 80px rgba(0,0,0,.45); }
+  main { max-width: 520px; margin: 0 auto; background: var(--paper); position: relative; box-shadow: 0 0 80px rgba(255,255,255,.04); }
   /* fibras de papel algodão (camada leve, sem blend para não pesar no celular) */
   main::after {
     content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none;
-    background-image: var(--fibers), var(--grain); background-size: 360px, 220px; opacity: .22;
+    background-image: var(--fibers), var(--grain); background-size: 360px, 220px; opacity: .12;
   }
 
   /* ---- capa ---- */
   .hero {
     position: relative; min-height: 100vh; min-height: 100svh; overflow: hidden;
-    background: radial-gradient(ellipse at 50% 40%, #fffdf9 0%, var(--ivory) 55%, #f1eadf 100%);
+    background: radial-gradient(ellipse at 50% 40%, #1c1c1c 0%, var(--ivory) 55%, #050505 100%);
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     text-align: center; padding: 9svh 36px 90px;
   }
-  .hero::before, .hero::after { /* moldura dupla em bronze */
-    content: ""; position: absolute; pointer-events: none; border: 1px solid rgba(138,113,82,.5);
+  .hero::before, .hero::after { /* moldura dupla em prata */
+    content: ""; position: absolute; pointer-events: none; border: 1px solid rgba(210,210,210,.45);
   }
   .hero::before { inset: 14px; }
-  .hero::after { inset: 19px; border-color: rgba(138,113,82,.25); }
+  .hero::after { inset: 19px; border-color: rgba(210,210,210,.2); }
   .hero > * { position: relative; z-index: 1; }
 
   .hero .kicker { font-size: 40px; color: var(--terracotta); }
@@ -253,14 +253,14 @@
   .chev { display: block; margin: 8px auto 0; width: 10px; height: 10px; border-right: 1px solid var(--terracotta); border-bottom: 1px solid var(--terracotta); transform: rotate(45deg); animation: bob 1.8s ease-in-out infinite; }
   @keyframes bob { 50% { transform: translateY(5px) rotate(45deg); } }
 
-  /* fita de seda terracota atravessando o canto, presa pelo lacre */
-  .ribbon { position: absolute !important; top: 0; right: 0; width: min(58%, 300px); z-index: 2 !important; pointer-events: none; overflow: visible; filter: drop-shadow(0 4px 5px rgba(90,40,15,.22)); }
+  /* fita de cetim prata atravessando o canto, presa pelo lacre */
+  .ribbon { position: absolute !important; top: 0; right: 0; width: min(58%, 300px); z-index: 2 !important; pointer-events: none; overflow: visible; filter: drop-shadow(0 4px 6px rgba(0,0,0,.7)); }
   /* flores secas em traço fino */
-  .bouquet { display: block; width: min(68%, 290px); margin: 18px auto 0; overflow: visible; filter: drop-shadow(0 8px 10px rgba(70,40,20,.2)); }
+  .bouquet { display: block; width: min(68%, 290px); margin: 18px auto 0; overflow: visible; filter: drop-shadow(0 8px 10px rgba(0,0,0,.6)); }
 
   /* ---- seções ---- */
   .torn { display: block; width: 100%; height: 34px; position: relative; z-index: 1; margin-bottom: -1px; }
-  .torn path { filter: drop-shadow(0 -1.5px 1.5px rgba(80,50,30,.16)); }
+  .torn path { filter: drop-shadow(0 -1px 0 rgba(255,255,255,.08)) drop-shadow(0 -1.5px 2px rgba(0,0,0,.6)); }
   section.block { padding: 56px 28px; text-align: center; position: relative; }
   .paper-a { background: var(--paper); }
   .paper-b { background: var(--paper-2); }
@@ -297,7 +297,7 @@
   .timeline .marker {
     position: absolute; left: 50%; top: 0; width: 40px; height: 40px; z-index: 2;
     transform: translate(-50%, 22px); will-change: transform;
-    filter: drop-shadow(0 2px 2px rgba(40,20,5,.4));
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,.7)) drop-shadow(0 0 1px rgba(255,255,255,.3));
   }
 
   .location .venue { font-size: 27px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink); margin-top: 20px; }
@@ -340,7 +340,7 @@
   }
   .rsvp-form select { background: linear-gradient(45deg, transparent 50%, var(--terracotta) 50%) right 8px center / 6px 6px no-repeat; }
   .rsvp-form input:focus, .rsvp-form select:focus, .rsvp-form textarea:focus { border-bottom-color: var(--terracotta); }
-  .rsvp-form .invalid { border-bottom-color: #b3261e !important; }
+  .rsvp-form .invalid { border-bottom-color: #ff7a7a !important; }
   .rsvp-form .choice { border: 0; margin-top: 22px; }
   .rsvp-form .choice label { display: inline-block; margin: 4px 6px 0 0; cursor: pointer; }
   .rsvp-form .choice input { position: absolute; opacity: 0; }
@@ -356,20 +356,20 @@
   .add-companion { margin-top: 12px; border: 0; background: none; padding: 4px 0; font: inherit; font-size: 18px; font-style: italic; color: var(--terracotta); cursor: pointer; }
   .add-companion[hidden] { display: none; }
   .rsvp-form .hp { position: absolute; left: -9999px; }
-  .form-status { min-height: 1.4em; margin-top: 12px !important; font-size: 18px !important; text-align: center; color: #b3261e; }
+  .form-status { min-height: 1.4em; margin-top: 12px !important; font-size: 18px !important; text-align: center; color: #ff7a7a; }
   .rsvp-done { margin-top: 26px; }
-  /* foto do casal como uma foto impressa presa com fita de seda */
+  /* foto do casal como uma foto impressa presa com fita preta */
   .couple-photo {
     position: relative; width: min(78%, 300px); margin: 34px auto 6px; padding: 12px 12px 6px;
     background: #fffdf8; transform: rotate(-2.5deg);
-    box-shadow: 0 1px 2px rgba(60,30,10,.18), 0 12px 26px rgba(60,30,10,.22);
+    box-shadow: 0 1px 2px rgba(0,0,0,.5), 0 12px 26px rgba(0,0,0,.6);
   }
   .couple-photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; }
-  .couple-photo figcaption { font-size: 30px !important; color: var(--terracotta) !important; padding: 4px 0 2px; }
-  .couple-photo::before { /* fita terracota no topo */
+  .couple-photo figcaption { font-size: 30px !important; color: #111 !important; padding: 4px 0 2px; }
+  .couple-photo::before { /* fita preta no topo */
     content: ""; position: absolute; left: 50%; top: -12px; width: 96px; height: 26px; transform: translateX(-50%) rotate(3deg);
-    background: linear-gradient(90deg, rgba(176,73,44,.88), rgba(207,106,69,.9) 50%, rgba(165,67,42,.88));
-    box-shadow: 0 1px 2px rgba(60,30,10,.2);
+    background: linear-gradient(90deg, rgba(20,20,20,.92), rgba(60,60,60,.92) 50%, rgba(20,20,20,.92));
+    box-shadow: 0 1px 2px rgba(0,0,0,.4);
   }
   .rsvp-done .script { font-size: 52px; color: var(--terracotta); }
   .rsvp .note { font-size: 18px; font-style: italic; color: var(--muted); margin-top: 22px; }
@@ -394,18 +394,18 @@
 <!-- ======= Símbolos SVG reutilizáveis ======= -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <!-- cera de bronze envelhecido -->
+    <!-- cera preta -->
     <radialGradient id="wax" cx="38%" cy="32%" r="75%">
-      <stop offset="0" stop-color="#f8e3a3"/><stop offset=".45" stop-color="#d1a849"/><stop offset="1" stop-color="#7c5715"/>
+      <stop offset="0" stop-color="#6a6a6a"/><stop offset=".45" stop-color="#262626"/><stop offset="1" stop-color="#050505"/>
     </radialGradient>
     <radialGradient id="waxIn" cx="60%" cy="65%" r="65%">
-      <stop offset="0" stop-color="#e2bd62"/><stop offset="1" stop-color="#a47a24"/>
+      <stop offset="0" stop-color="#2e2e2e"/><stop offset="1" stop-color="#0c0c0c"/>
     </radialGradient>
     <radialGradient id="sealLight">
-      <stop offset="0" stop-color="#fff2d8" stop-opacity=".55"/><stop offset=".7" stop-color="#ffd9a6" stop-opacity=".25"/><stop offset="1" stop-color="#ffd9a6" stop-opacity=".6"/>
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".45"/><stop offset=".7" stop-color="#e0e0e0" stop-opacity=".2"/><stop offset="1" stop-color="#e0e0e0" stop-opacity=".55"/>
     </radialGradient>
     <radialGradient id="waxShine" cx="32%" cy="26%" r="40%">
-      <stop offset="0" stop-color="#fff" stop-opacity=".4"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
     </radialGradient>
     <filter id="waxTex" x="-10%" y="-10%" width="120%" height="120%">
       <feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" result="n"/>
@@ -426,24 +426,24 @@
     <symbol id="waxSeal" viewBox="-60 -60 120 120" overflow="visible">
       <g filter="url(#waxTex)">
         <path class="sealEdge" fill="url(#wax)"/>
-        <path d="M40 30 C50 34 56 42 50 47 C44 50 38 42 34 36Z" fill="#9a7020"/>
+        <path d="M40 30 C50 34 56 42 50 47 C44 50 38 42 34 36Z" fill="#1a1a1a"/>
         <circle r="37" fill="url(#waxIn)"/>
       </g>
-      <circle r="37" fill="none" stroke="#5e400c" stroke-width="2" opacity=".65" transform="translate(-.6 -.9)"/>
-      <circle r="37" fill="none" stroke="#fff3c8" stroke-width="1.2" opacity=".75" transform="translate(.7 1)"/>
-      <g fill="#fff3c8" color="#fff3c8" opacity=".7" transform="translate(.6 .8)"><use href="#laurelPair"/></g>
-      <g fill="#6b4a10" color="#6b4a10"><use href="#laurelPair"/></g>
-      <text x=".7" y="7" text-anchor="middle" font-family="Pinyon Script, cursive" font-size="28" fill="#fff3c8" opacity=".75" class="sealText">D&amp;J</text>
-      <text x="0" y="6" text-anchor="middle" font-family="Pinyon Script, cursive" font-size="28" fill="#6b4a10" class="sealText">D&amp;J</text>
+      <circle r="37" fill="none" stroke="#000" stroke-width="2" opacity=".8" transform="translate(-.6 -.9)"/>
+      <circle r="37" fill="none" stroke="#d8d8d8" stroke-width="1.2" opacity=".55" transform="translate(.7 1)"/>
+      <g fill="#000" color="#000" opacity=".8" transform="translate(.6 .8)"><use href="#laurelPair"/></g>
+      <g fill="#cfcfcf" color="#cfcfcf"><use href="#laurelPair"/></g>
+      <text x=".7" y="7" text-anchor="middle" font-family="Pinyon Script, cursive" font-size="28" fill="#000" opacity=".8" class="sealText">D&amp;J</text>
+      <text x="0" y="6" text-anchor="middle" font-family="Pinyon Script, cursive" font-size="28" fill="#e0e0e0" class="sealText">D&amp;J</text>
       <ellipse cx="-16" cy="-22" rx="26" ry="16" fill="url(#waxShine)" transform="rotate(-25 -16 -22)"/>
     </symbol>
 
-    <!-- buquê: pétalas claras na borda e mais escuras na base -->
-    <radialGradient id="pBlush" cx="50%" cy="0%" r="115%"><stop offset="0" stop-color="#fcf3ec"/><stop offset=".55" stop-color="#efd8c8"/><stop offset="1" stop-color="#c49c84"/></radialGradient>
-    <radialGradient id="pCream" cx="50%" cy="0%" r="115%"><stop offset="0" stop-color="#fffbf4"/><stop offset=".55" stop-color="#f2e7d5"/><stop offset="1" stop-color="#c9b293"/></radialGradient>
-    <radialGradient id="pPeach" cx="50%" cy="0%" r="115%"><stop offset="0" stop-color="#f8d39a"/><stop offset=".55" stop-color="#e6a65c"/><stop offset="1" stop-color="#b06c2c"/></radialGradient>
-    <linearGradient id="pRust" x1="0" x2="1"><stop offset="0" stop-color="#5e1c0c"/><stop offset=".45" stop-color="#9c3c22"/><stop offset="1" stop-color="#c7623c"/></linearGradient>
-    <linearGradient id="satinTail" x1="0" x2="1"><stop offset="0" stop-color="#8a3820"/><stop offset=".35" stop-color="#c9643e"/><stop offset=".6" stop-color="#a8472c"/><stop offset="1" stop-color="#7e3119"/></linearGradient>
+    <!-- buquê monocromático: branco, prata e grafite -->
+    <radialGradient id="pBlush" cx="50%" cy="0%" r="115%"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#d6d6d6"/><stop offset="1" stop-color="#8a8a8a"/></radialGradient>
+    <radialGradient id="pCream" cx="50%" cy="0%" r="115%"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#ececec"/><stop offset="1" stop-color="#a3a3a3"/></radialGradient>
+    <radialGradient id="pPeach" cx="50%" cy="0%" r="115%"><stop offset="0" stop-color="#9a9a9a"/><stop offset=".55" stop-color="#555555"/><stop offset="1" stop-color="#1e1e1e"/></radialGradient>
+    <linearGradient id="pRust" x1="0" x2="1"><stop offset="0" stop-color="#1a1a1a"/><stop offset=".45" stop-color="#3c3c3c"/><stop offset="1" stop-color="#7a7a7a"/></linearGradient>
+    <linearGradient id="satinTail" x1="0" x2="1"><stop offset="0" stop-color="#3a3a3a"/><stop offset=".35" stop-color="#a6a6a6"/><stop offset=".6" stop-color="#5a5a5a"/><stop offset="1" stop-color="#2a2a2a"/></linearGradient>
     <symbol id="bouquet" viewBox="0 0 300 310" overflow="visible"><g id="bouquetG"></g></symbol>
 
 
@@ -452,12 +452,12 @@
     </symbol>
 
     <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#8a6a40"/><stop offset=".3" stop-color="#ead2a0"/><stop offset=".5" stop-color="#a88452"/>
-      <stop offset=".72" stop-color="#f6e6c2"/><stop offset="1" stop-color="#8a6a40"/>
+      <stop offset="0" stop-color="#7a7a7a"/><stop offset=".3" stop-color="#e8e8e8"/><stop offset=".5" stop-color="#9a9a9a"/>
+      <stop offset=".72" stop-color="#ffffff"/><stop offset="1" stop-color="#7a7a7a"/>
     </linearGradient>
     <linearGradient id="satin" x1="0" y1="0" x2="1" y2="-1">
-      <stop offset="0" stop-color="#7e3119"/><stop offset=".18" stop-color="#b0492c"/><stop offset=".32" stop-color="#cf6a45"/>
-      <stop offset=".45" stop-color="#a5432a"/><stop offset=".62" stop-color="#c25b37"/><stop offset=".8" stop-color="#9a3e25"/><stop offset="1" stop-color="#7e3119"/>
+      <stop offset="0" stop-color="#2a2a2a"/><stop offset=".18" stop-color="#6a6a6a"/><stop offset=".32" stop-color="#c8c8c8"/>
+      <stop offset=".45" stop-color="#555555"/><stop offset=".62" stop-color="#9a9a9a"/><stop offset=".8" stop-color="#444444"/><stop offset="1" stop-color="#2a2a2a"/>
     </linearGradient>
     <filter id="fray" x="-5%" y="-5%" width="110%" height="110%">
       <feTurbulence type="fractalNoise" baseFrequency=".6 .9" numOctaves="2" seed="3" result="n"/>
@@ -483,15 +483,15 @@
     </div>
     <div class="pocket"></div>
     <svg class="pocket-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0 0 L50 50 L100 0" stroke="rgba(176,73,44,.55)"/>
-      <path d="M0 .4 L50 50.6 L100 .4" stroke="rgba(255,255,255,.5)"/>
-      <path d="M0 100 L40 58 M100 100 L60 58" stroke="rgba(176,73,44,.22)"/>
-      <!-- filete terracota em volta do envelope -->
-      <rect x="2.6" y="1.6" width="94.8" height="96.8" fill="none" stroke="rgba(176,73,44,.6)"/>
-      <rect x="3.6" y="2.2" width="92.8" height="95.6" fill="none" stroke="rgba(176,73,44,.25)"/>
+      <path d="M0 0 L50 50 L100 0" stroke="rgba(210,210,210,.4)"/>
+      <path d="M0 .4 L50 50.6 L100 .4" stroke="rgba(0,0,0,.6)"/>
+      <path d="M0 100 L40 58 M100 100 L60 58" stroke="rgba(210,210,210,.15)"/>
+      <!-- filete prata em volta do envelope -->
+      <rect x="2.6" y="1.6" width="94.8" height="96.8" fill="none" stroke="rgba(210,210,210,.45)"/>
+      <rect x="3.6" y="2.2" width="92.8" height="95.6" fill="none" stroke="rgba(210,210,210,.18)"/>
     </svg>
     <div class="flap-shadow"></div>
-    <div class="flap"><div class="face front"><svg class="flap-trim" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M2.6 3 H97.4 L50 93 Z" fill="none" stroke="rgba(176,73,44,.6)"/><path d="M4.6 5 H95.4 L50 89 Z" fill="none" stroke="rgba(176,73,44,.25)"/></svg></div><div class="face inside"></div></div>
+    <div class="flap"><div class="face front"><svg class="flap-trim" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M2.6 3 H97.4 L50 93 Z" fill="none" stroke="rgba(210,210,210,.45)"/><path d="M4.6 5 H95.4 L50 89 Z" fill="none" stroke="rgba(210,210,210,.18)"/></svg></div><div class="face inside"></div></div>
 
     <div class="seal">
       <div class="half l"><svg viewBox="-60 -60 120 120"><use href="#waxSeal" x="-60" y="-60" width="120" height="120"/></svg></div>
@@ -505,12 +505,12 @@
 <!-- ======= CONVITE ======= -->
 <main>
   <section class="hero">
-    <!-- fita de seda com bordas desfiadas + lacre de bronze -->
+    <!-- fita de cetim com bordas desfiadas + lacre de cera preta -->
     <svg class="ribbon" viewBox="0 0 200 200" aria-hidden="true">
       <g filter="url(#fray)">
         <path d="M70 -6 L128 -6 L206 72 L206 130 Z" fill="url(#satin)"/>
       </g>
-      <g stroke="#e58a62" stroke-width=".6" opacity=".35" fill="none">
+      <g stroke="#ffffff" stroke-width=".6" opacity=".25" fill="none">
         <path d="M86 -4 L206 112"/><path d="M108 -4 L206 92"/>
       </g>
       <use href="#waxSeal" x="114" y="22" width="64" height="64"/>
@@ -530,8 +530,8 @@
       <circle cx="70" cy="32" r="20" fill="none" stroke="url(#metal)" stroke-width="2.4"/>
       <circle cx="50" cy="36" r="20" fill="none" stroke="url(#metal)" stroke-width="2.4"/>
       <circle cx="70" cy="32" r="20" fill="none" stroke="url(#metal)" stroke-width="2.4" clip-path="url(#ringCross)"/>
-      <path d="M66 12.5 L68 9 L72 9 L74 12.5 L70 16 Z" fill="#fffdf8" stroke="#a88452" stroke-width=".8" stroke-linejoin="round"/>
-      <path d="M66 12.5 H74 M68 9 L70 16 L72 9" fill="none" stroke="#c9b48e" stroke-width=".5"/>
+      <path d="M66 12.5 L68 9 L72 9 L74 12.5 L70 16 Z" fill="#ffffff" stroke="#9a9a9a" stroke-width=".8" stroke-linejoin="round"/>
+      <path d="M66 12.5 H74 M68 9 L70 16 L72 9" fill="none" stroke="#c8c8c8" stroke-width=".5"/>
     </svg>
 
     <div class="dateblock">
@@ -550,7 +550,7 @@
     <div class="scroll-down caps">Role para baixo<span class="chev"></span></div>
   </section>
 
-  <svg class="torn" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true" style="background:#f1eadf"><path fill="#f6f1e8"/></svg>
+  <svg class="torn" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true" style="background:#050505"><path fill="#0d0d0d"/></svg>
 
   <section class="block paper-a intro">
     <div class="reveal">
@@ -562,7 +562,7 @@
     </div>
   </section>
 
-  <svg class="torn" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true" style="background:#f6f1e8"><path fill="#ebe3d5"/></svg>
+  <svg class="torn" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true" style="background:#0d0d0d"><path fill="#161616"/></svg>
 
   <section class="block paper-b">
     <div class="reveal">
@@ -576,7 +576,7 @@
     </div>
   </section>
 
-  <svg class="torn" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true" style="background:#ebe3d5"><path fill="#f6f1e8"/></svg>
+  <svg class="torn" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true" style="background:#161616"><path fill="#0d0d0d"/></svg>
 
   <section class="block paper-a">
     <h2 class="heading script reveal press"><svg><use href="#flourish-l"/></svg>Programação<svg class="flip"><use href="#flourish-l"/></svg></h2>
@@ -590,7 +590,7 @@
     </div>
   </section>
 
-  <svg class="torn" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true" style="background:#f6f1e8"><path fill="#ebe3d5"/></svg>
+  <svg class="torn" viewBox="0 0 400 34" preserveAspectRatio="none" aria-hidden="true" style="background:#0d0d0d"><path fill="#161616"/></svg>
 
   <section class="block paper-b location" id="location">
     <div class="reveal">
@@ -611,7 +611,7 @@
     </div>
     <!-- casarão em traço fino, estilo gravura -->
     <svg class="villa reveal" viewBox="0 0 400 200" aria-hidden="true">
-      <g fill="none" stroke="#8a7152" stroke-width=".9" stroke-linejoin="round" stroke-linecap="round">
+      <g fill="none" stroke="#8a8a8a" stroke-width=".9" stroke-linejoin="round" stroke-linecap="round">
         <path d="M30 186 H370"/><path d="M60 190 H340" opacity=".5"/>
         <path d="M300 186 C290 140 294 80 304 46 C314 80 318 140 308 186"/>
         <path d="M304 60 V186 M298 100 L304 92 L310 100 M296 130 L304 122 L312 130 M295 160 L304 152 L313 160" opacity=".55"/>
@@ -740,7 +740,7 @@
     document.querySelector(".sealEdge").setAttribute("d", p + "Z");
   })();
 
-  // ===== Buquê terracota (rosas, gérbera, plumas secas, eucalipto, fita) =====
+  // ===== Buquê monocromático (rosas, gérbera, plumas secas, eucalipto, fita) =====
   (() => {
     const g = $("bouquetG"), ns = "http://www.w3.org/2000/svg", rnd = seeded(11);
     const el = (tag, a) => { const e = document.createElementNS(ns, tag); for (const k in a) e.setAttribute(k, a[k]); g.appendChild(e); return e; };
@@ -748,16 +748,16 @@
     const pick = arr => arr[Math.floor(rnd() * arr.length)];
     const quad = (a, c, b, t) => [0, 1].map(i => (1 - t) ** 2 * a[i] + 2 * (1 - t) * t * c[i] + t * t * b[i]);
     const ctrl = (a, b, bend) => [(a[0] + b[0]) / 2 + (b[1] - a[1]) * bend, (a[1] + b[1]) / 2 - (b[0] - a[0]) * bend];
-    const stem = (to, color = "#6f6a48", w = 1.1) => el("path", { d: `M${B} Q${ctrl(B, to, .08)} ${to}`, fill: "none", stroke: color, "stroke-width": w });
+    const stem = (to, color = "#5a5a5a", w = 1.1) => el("path", { d: `M${B} Q${ctrl(B, to, .08)} ${to}`, fill: "none", stroke: color, "stroke-width": w });
 
     function eucalyptus(tip) {
       const c = ctrl(B, tip, rnd() > .5 ? .12 : -.12);
-      el("path", { d: `M${B} Q${c} ${tip}`, fill: "none", stroke: "#6f7c62", "stroke-width": 1 });
+      el("path", { d: `M${B} Q${c} ${tip}`, fill: "none", stroke: "#5c5c5c", "stroke-width": 1 });
       for (let t = .38, k = 0; t <= 1; t += .075, k++) {
         const [x, y] = quad(B, c, tip, t), [x2, y2] = quad(B, c, tip, Math.min(1, t + .02));
         const a = Math.atan2(y2 - y, x2 - x), side = k % 2 ? 1 : -1, r = 7.5 - t * 3;
         el("ellipse", { cx: x - Math.sin(a) * side * (r + 1), cy: y + Math.cos(a) * side * (r + 1), rx: r, ry: r * .85,
-          fill: pick(["#9aa58c", "#8a977c", "#aab39c"]), stroke: "#6f7c62", "stroke-width": .5 });
+          fill: pick(["#6e6e6e", "#5a5a5a", "#808080"]), stroke: "#3e3e3e", "stroke-width": .5 });
       }
     }
     function plume(base, tip, w) {                           // celósia / astilbe seca
@@ -766,7 +766,7 @@
         const t = i / 70, [x, y] = quad(base, c, tip, t), [x2, y2] = quad(base, c, tip, Math.min(1, t + .02));
         const a = Math.atan2(y2 - y, x2 - x) * 180 / Math.PI, spread = w * (1 - t * .85);
         el("ellipse", { cx: x + (rnd() - .5) * spread, cy: y + (rnd() - .5) * spread, rx: 3.6 * (1 - t * .5), ry: 1.5,
-          fill: pick(["#b0492c", "#8e3a22", "#c6643a", "#a3402a", "#d07a4a"]), transform: `rotate(${a + (rnd() - .5) * 50} ${x} ${y})`, opacity: .92 });
+          fill: pick(["#bdbdbd", "#8a8a8a", "#e0e0e0", "#6a6a6a", "#a6a6a6"]), transform: `rotate(${a + (rnd() - .5) * 50} ${x} ${y})`, opacity: .92 });
       }
     }
     const PETAL = "M0 .1 C-.62 -.05 -.95 -.62 -.55 -.98 C-.25 -1.2 .25 -1.2 .55 -.98 C.95 -.62 .62 -.05 0 .1Z";
@@ -781,22 +781,22 @@
     }
     function gerbera(cx, cy, r) {
       [[26, 0, 1], [26, 7, .82]].forEach(([n, off, s]) => { for (let i = 0; i < n; i++)
-        el("ellipse", { cx: cx + r * .55 * s, cy, rx: r * .45 * s, ry: r * .1, fill: "url(#pRust)", stroke: "#4e1708", "stroke-width": .3,
+        el("ellipse", { cx: cx + r * .55 * s, cy, rx: r * .45 * s, ry: r * .1, fill: "url(#pRust)", stroke: "#9a9a9a", "stroke-width": .3,
           transform: `rotate(${i * 360 / n + off} ${cx} ${cy})` }); });
-      el("circle", { cx, cy, r: r * .32, fill: "#3a2215" });
+      el("circle", { cx, cy, r: r * .32, fill: "#050505" });
       for (let i = 0; i < 20; i++) { const a = i / 20 * Math.PI * 2;
-        el("circle", { cx: cx + Math.cos(a) * r * .33, cy: cy + Math.sin(a) * r * .33, r: 1.1, fill: "#c98a3a" }); }
-      for (let i = 0; i < 10; i++) el("circle", { cx: cx + (rnd() - .5) * r * .4, cy: cy + (rnd() - .5) * r * .4, r: .8, fill: "#6b4326" });
+        el("circle", { cx: cx + Math.cos(a) * r * .33, cy: cy + Math.sin(a) * r * .33, r: 1.1, fill: "#d0d0d0" }); }
+      for (let i = 0; i < 10; i++) el("circle", { cx: cx + (rnd() - .5) * r * .4, cy: cy + (rnd() - .5) * r * .4, r: .8, fill: "#6a6a6a" });
     }
     function tansy(cx, cy, n = 6) {
       for (let i = 0; i < n; i++) { const x = cx + (rnd() - .5) * 18, y = cy + (rnd() - .5) * 14;
-        el("circle", { cx: x, cy: y, r: 2.6 + rnd(), fill: "#d9953a", stroke: "#a8642a", "stroke-width": .5 });
-        el("circle", { cx: x - .6, cy: y - .6, r: .9, fill: "#f2c27a" }); }
+        el("circle", { cx: x, cy: y, r: 2.6 + rnd(), fill: "#c8c8c8", stroke: "#7a7a7a", "stroke-width": .5 });
+        el("circle", { cx: x - .6, cy: y - .6, r: .9, fill: "#ffffff" }); }
     }
     function breath(cx, cy, n = 10) {
       for (let i = 0; i < n; i++) { const x = cx + (rnd() - .5) * 30, y = cy + (rnd() - .6) * 26;
-        el("path", { d: `M${cx} ${cy + 8} L${x} ${y}`, stroke: "#8a8462", "stroke-width": .4, fill: "none" });
-        el("circle", { cx: x, cy: y, r: 1.6, fill: "#fbf6ee", stroke: "#bfae92", "stroke-width": .4 }); }
+        el("path", { d: `M${cx} ${cy + 8} L${x} ${y}`, stroke: "#6a6a6a", "stroke-width": .4, fill: "none" });
+        el("circle", { cx: x, cy: y, r: 1.6, fill: "#ffffff", stroke: "#a6a6a6", "stroke-width": .4 }); }
     }
 
     // hastes que sobem até as flores
@@ -822,13 +822,13 @@
     // hastes abaixo da amarração
     for (let i = 0; i < 11; i++) {
       const sx = B[0] - 9 + i * 1.8, ex = 128 + i * 4.4 + (rnd() - .5) * 3;
-      el("path", { d: `M${sx} ${B[1] - 6} L${ex} 302`, stroke: pick(["#6f6a48", "#7d7652", "#5f5a3c", "#8a7a52"]), "stroke-width": 1.6, fill: "none", "stroke-linecap": "round" });
+      el("path", { d: `M${sx} ${B[1] - 6} L${ex} 302`, stroke: pick(["#4a4a4a", "#5a5a5a", "#3c3c3c", "#666666"]), "stroke-width": 1.6, fill: "none", "stroke-linecap": "round" });
     }
     // fita de cetim: laço na amarração e pontas caindo
     el("path", { d: `M${B[0]} ${B[1] + 4} C165 238 158 268 178 302`, stroke: "url(#satinTail)", "stroke-width": 9, fill: "none", filter: "url(#fray)" });
     el("path", { d: `M${B[0] - 2} ${B[1] + 6} C134 244 144 272 120 304`, stroke: "url(#satinTail)", "stroke-width": 8, fill: "none", filter: "url(#fray)" });
     el("rect", { x: B[0] - 21, y: B[1] - 8, width: 42, height: 15, rx: 2, fill: "url(#satin)", filter: "url(#fray)" });
-    el("ellipse", { cx: B[0], cy: B[1], rx: 6, ry: 7, fill: "#9c3c22" });
+    el("ellipse", { cx: B[0], cy: B[1], rx: 6, ry: 7, fill: "#3a3a3a" });
   })();
 
   // ===== Fogos de artifício: explosão principal no lacre + estouros menores ao redor =====
@@ -839,15 +839,15 @@
     cv.className = "fx"; cv.width = innerWidth * dpr; cv.height = innerHeight * dpr;
     document.body.appendChild(cv);
     const ctx = cv.getContext("2d"); ctx.scale(dpr, dpr);
-    // só tons de dourado: do ouro claro ao ouro velho
-    const palettes = [["#f6d36a", "#e6b740", "#d4a12e"], ["#f2c14e", "#d9a536", "#c29028"], ["#fbe08c", "#e8c25a", "#cfa03a"], ["#e0b04a", "#c8962c", "#b8862a"]];
+    // só tons de prata: do branco ao prata envelhecido
+    const palettes = [["#ffffff", "#e6e6e6", "#c8c8c8"], ["#f2f2f2", "#d0d0d0", "#b0b0b0"], ["#ffffff", "#dcdcdc", "#bcbcbc"], ["#e8e8e8", "#c4c4c4", "#a0a0a0"]];
     const sparks = [], rockets = [];
     // brilho pré-desenhado por cor: núcleo claro + halo colorido
     const glow = {};
     const sprite = c => glow[c] || (glow[c] = (() => {
       const o = document.createElement("canvas"); o.width = o.height = 64;
       const g = o.getContext("2d"), rg = g.createRadialGradient(32, 32, 0, 32, 32, 32);
-      rg.addColorStop(0, "#fff6dc"); rg.addColorStop(.15, c); rg.addColorStop(.45, c + "aa"); rg.addColorStop(1, c + "00");
+      rg.addColorStop(0, "#ffffff"); rg.addColorStop(.15, c); rg.addColorStop(.45, c + "aa"); rg.addColorStop(1, c + "00");
       g.fillStyle = rg; g.fillRect(0, 0, 64, 64); return o;
     })());
     function burst(x, y, n, power, pal) {
@@ -857,7 +857,7 @@
           decay: .008 + Math.random() * .012, color: pal[Math.floor(Math.random() * pal.length)], twinkle: Math.random() < .3 });
       }
     }
-    burst(cx, cy, 170, 11, palettes[0]);                      // explosão principal, dourada
+    burst(cx, cy, 170, 11, palettes[0]);                      // explosão principal, prateada
     burst(cx, cy, 80, 6, palettes[1]);
     let flash = 1;                                           // clarão inicial no lacre
     [[260, -.32, -.30, 1], [520, .30, -.36, 3], [800, -.05, -.46, 2], [1050, .36, -.12, 1], [1250, -.34, -.08, 3]]
@@ -869,13 +869,13 @@
       ctx.clearRect(0, 0, innerWidth, innerHeight);
       if (flash > 0) {
         const fr = ctx.createRadialGradient(cx, cy, 0, cx, cy, 220);
-        fr.addColorStop(0, `rgba(242,193,78,${flash * .8})`); fr.addColorStop(1, "rgba(242,193,78,0)");
+        fr.addColorStop(0, `rgba(235,235,235,${flash * .7})`); fr.addColorStop(1, "rgba(235,235,235,0)");
         ctx.fillStyle = fr; ctx.fillRect(cx - 220, cy - 220, 440, 440); flash -= .07 * dt;
       }
       for (let i = rockets.length - 1; i >= 0; i--) {     // foguetes sobem do lacre e estouram
         const k = rockets[i]; k.t = Math.min(1, k.t + .06 * dt);
         const x = k.x + (k.tx - k.x) * k.t, y = k.y + (k.ty - k.y) * (1 - (1 - k.t) ** 2);
-        ctx.drawImage(sprite("#e6b740"), x - 9, y - 9, 18, 18);
+        ctx.drawImage(sprite("#e6e6e6"), x - 9, y - 9, 18, 18);
         if (k.t >= 1) { burst(x, y, 70, 5.5, k.pal); rockets.splice(i, 1); }
       }
       for (let i = sparks.length - 1; i >= 0; i--) {
@@ -1065,8 +1065,8 @@
   addEventListener("resize", onScroll);
   updateMarker();
 
-  // ===== Pétalas secas caindo só enquanto o local está visível =====
-  const petalColors = ["#b0492c", "#ecd6c4", "#d9953a", "#c67a3e"];
+  // ===== Pétalas prateadas caindo só enquanto o local está visível =====
+  const petalColors = ["#ffffff", "#d9d9d9", "#a6a6a6", "#8a8a8a"];
   let petalTimer = null;
   function dropPetal(fast) {
     if (document.hidden || document.querySelectorAll(".petal").length > 140) return;

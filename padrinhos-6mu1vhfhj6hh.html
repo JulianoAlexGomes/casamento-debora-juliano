@@ -272,6 +272,8 @@
   .reveal.in { opacity: 1; transform: none; }
 
   .intro .couple { font-size: 54px; line-height: 1.1; }
+  .intro .couple > span { display: block; }
+  .intro .couple .amp { font-size: 38px; line-height: 1; margin: 2px 0; }
   .intro .warm { font-size: 36px; color: var(--terracotta); margin-top: 2px; }
   .intro p { font-size: 23px; line-height: 1.5; margin-top: 18px; }
   .intro .quote { font-style: italic; font-size: 23px; color: var(--muted); margin-top: 22px; }
@@ -307,13 +309,6 @@
   .location .when, .location .addr { font-size: 22px; line-height: 1.45; margin-top: 8px; }
   .location .dress { margin-top: 26px; font-size: 22px; }
   .location .dress span { display: block; font-size: 14px; letter-spacing: .25em; text-transform: uppercase; color: var(--muted); margin-bottom: 2px; }
-  .white-note {
-    margin: 22px auto 0; max-width: 360px; padding: 14px 18px 16px;
-    border-top: 1px solid var(--bronze-light); border-bottom: 1px solid var(--bronze-light);
-    font-size: 19px; line-height: 1.45; font-style: italic; color: var(--text);
-  }
-  .white-note strong { font-style: normal; font-weight: 700; letter-spacing: .06em; color: var(--terracotta); }
-  .white-note .wn-title { display: block; font-style: normal; font-size: 13px; letter-spacing: .3em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
   .give-note { max-width: 340px; margin: 18px auto 0; font-size: 18px; line-height: 1.45; font-style: italic; color: var(--muted); }
   .give-note strong { font-style: normal; font-weight: 700; color: var(--text); }
   .give-note svg { display: block; width: 14px; height: 14px; margin: 0 auto 6px; color: var(--terracotta); opacity: .8; }
@@ -611,7 +606,7 @@
   <section class="block paper-a intro">
     <div class="reveal">
       <div class="to-line caps" id="toLine" hidden></div>
-      <div class="couple script foil"><span class="n1">Débora</span> &amp; <span class="n2">Juliano</span></div>
+      <div class="couple script foil"><span class="n1">Débora</span><span class="amp">&amp;</span><span class="n2">Juliano</span></div>
       <div class="warm script press">têm o prazer de convidar <span id="youWord">você</span></div>
       <p>para estar ao nosso lado no altar como</p>
       <div class="role script foil" id="roleLine">nossos padrinhos</div>
@@ -660,10 +655,6 @@
       <div class="addr">Rua Lindolfo Collor, 97 · Centro<br>São Leopoldo · RS · 93010-080</div>
       <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Lindolfo+Collor+97+Centro+S%C3%A3o+Leopoldo+RS" target="_blank" rel="noopener">Ver no mapa</a>
       <div class="dress"><span>Traje</span>Esporte Fino<br>Dress Code All Black</div>
-      <div class="white-note">
-        <span class="wn-title">Um pedido especial</span>
-        A cor <strong>branca</strong> é exclusiva da noiva. Pedimos, com carinho, que madrinhas e padrinhos evitem branco e tons muito claros como off-white, creme e pérola.
-      </div>
       <p class="give-note">
         <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 14 C3 10.5 1.5 8 1.5 5.6 A3.2 3.2 0 0 1 8 4.2 A3.2 3.2 0 0 1 14.5 5.6 C14.5 8 13 10.5 8 14Z" fill="currentColor"/></svg>
         Pedimos encarecidamente a todos os convidados que puderem doar <strong>1 kg de alimento não perecível</strong>. O que for arrecadado será doado para famílias carentes.

@@ -135,7 +135,7 @@
   #envelope.s2 .flap-shadow { opacity: 0; }
   #envelope.behind .flap { z-index: 1; }
 
-  /* lacre de cera vermelha: acende em círculo e se parte */
+  /* lacre de cera preta: acende em círculo e se parte */
   .seal {
     position: absolute; left: 50%; top: 52%; z-index: 6;
     width: calc(var(--w) * .56); aspect-ratio: 1;
@@ -164,11 +164,11 @@
   .seal-ring .fill { fill: url(#sealLight); opacity: 0; transition: opacity .35s ease; }
   .seal-ring .glow-initials {
     fill: #fff6e6; opacity: 0; transition: opacity .45s ease;
-    filter: drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 4px #f2dcb4) drop-shadow(0 0 9px #e58fa2);
+    filter: drop-shadow(0 0 1.5px #fff) drop-shadow(0 0 4px #f2dcb4) drop-shadow(0 0 9px #d4af6a);
   }
   .seal::before {
     content: ""; position: absolute; inset: -18%; border-radius: 50%; pointer-events: none;
-    background: radial-gradient(circle, rgba(255,240,220,.55) 0%, rgba(229,143,162,.25) 45%, rgba(229,143,162,0) 70%);
+    background: radial-gradient(circle, rgba(255,240,220,.55) 0%, rgba(212,175,106,.25) 45%, rgba(212,175,106,0) 70%);
     opacity: 0; transform: scale(.6); transition: opacity .35s ease, transform .5s ease;
   }
   #envelope.s0 .seal { animation: none; }
@@ -256,7 +256,7 @@
   .chev { display: block; margin: 8px auto 0; width: 10px; height: 10px; border-right: 1px solid var(--terracotta); border-bottom: 1px solid var(--terracotta); transform: rotate(45deg); animation: bob 1.8s ease-in-out infinite; }
   @keyframes bob { 50% { transform: translateY(5px) rotate(45deg); } }
 
-  /* fita de cetim rosé atravessando o canto, presa pelo lacre */
+  /* fita de cetim dourada atravessando o canto, presa pelo lacre */
   .ribbon { position: absolute !important; top: 0; right: 0; width: min(58%, 300px); z-index: 2 !important; pointer-events: none; overflow: visible; filter: drop-shadow(0 4px 6px rgba(0,0,0,.45)); }
   /* flores secas em traço fino */
   .bouquet { display: block; width: min(68%, 290px); margin: 18px auto 0; overflow: visible; filter: drop-shadow(0 8px 10px rgba(0,0,0,.4)); }
@@ -369,9 +369,9 @@
   }
   .couple-photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; }
   .couple-photo figcaption { font-size: 30px !important; color: #a8182f !important; padding: 4px 0 2px; }
-  .couple-photo::before { /* fita rosé no topo */
+  .couple-photo::before { /* fita dourada no topo */
     content: ""; position: absolute; left: 50%; top: -12px; width: 96px; height: 26px; transform: translateX(-50%) rotate(3deg);
-    background: linear-gradient(90deg, rgba(214,120,142,.9), rgba(244,190,203,.92) 50%, rgba(205,108,131,.9));
+    background: linear-gradient(90deg, rgba(176,138,72,.9), rgba(243,222,170,.92) 50%, rgba(164,124,60,.9));
     box-shadow: 0 1px 2px rgba(0,0,0,.25);
   }
   .rsvp-done .script { font-size: 52px; color: var(--terracotta); }
@@ -397,15 +397,15 @@
 <!-- ======= Símbolos SVG reutilizáveis ======= -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
-    <!-- cera vermelha -->
+    <!-- cera preta -->
     <radialGradient id="wax" cx="38%" cy="32%" r="75%">
-      <stop offset="0" stop-color="#f06a7e"/><stop offset=".45" stop-color="#b01a32"/><stop offset="1" stop-color="#5a0816"/>
+      <stop offset="0" stop-color="#5a5a5c"/><stop offset=".45" stop-color="#1c1c1e"/><stop offset="1" stop-color="#050505"/>
     </radialGradient>
     <radialGradient id="waxIn" cx="60%" cy="65%" r="65%">
-      <stop offset="0" stop-color="#c72840"/><stop offset="1" stop-color="#7e0f22"/>
+      <stop offset="0" stop-color="#2a2a2c"/><stop offset="1" stop-color="#0a0a0a"/>
     </radialGradient>
     <radialGradient id="sealLight">
-      <stop offset="0" stop-color="#fff6e6" stop-opacity=".5"/><stop offset=".7" stop-color="#f4c6cf" stop-opacity=".25"/><stop offset="1" stop-color="#f4c6cf" stop-opacity=".55"/>
+      <stop offset="0" stop-color="#fff6e6" stop-opacity=".5"/><stop offset=".7" stop-color="#f2dcb4" stop-opacity=".25"/><stop offset="1" stop-color="#f2dcb4" stop-opacity=".55"/>
     </radialGradient>
     <radialGradient id="waxShine" cx="32%" cy="26%" r="40%">
       <stop offset="0" stop-color="#fff" stop-opacity=".4"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
@@ -429,14 +429,14 @@
     <symbol id="waxSeal" viewBox="-60 -60 120 120" overflow="visible">
       <g filter="url(#waxTex)">
         <path class="sealEdge" fill="url(#wax)"/>
-        <path d="M40 30 C50 34 56 42 50 47 C44 50 38 42 34 36Z" fill="#8e1226"/>
+        <path d="M40 30 C50 34 56 42 50 47 C44 50 38 42 34 36Z" fill="#161618"/>
         <circle r="37" fill="url(#waxIn)"/>
       </g>
-      <circle r="37" fill="none" stroke="#4a0612" stroke-width="2" opacity=".7" transform="translate(-.6 -.9)"/>
+      <circle r="37" fill="none" stroke="#000000" stroke-width="2" opacity=".7" transform="translate(-.6 -.9)"/>
       <circle r="37" fill="none" stroke="#f6dfb8" stroke-width="1.2" opacity=".7" transform="translate(.7 1)"/>
-      <g fill="#4a0612" color="#4a0612" opacity=".7" transform="translate(.6 .8)"><use href="#laurelPair"/></g>
+      <g fill="#000000" color="#000000" opacity=".7" transform="translate(.6 .8)"><use href="#laurelPair"/></g>
       <g fill="#f2dcb4" color="#f2dcb4"><use href="#laurelPair"/></g>
-      <text x=".7" y="7" text-anchor="middle" font-family="Pinyon Script, cursive" font-size="28" fill="#4a0612" opacity=".7" class="sealText">D&amp;J</text>
+      <text x=".7" y="7" text-anchor="middle" font-family="Pinyon Script, cursive" font-size="28" fill="#000000" opacity=".7" class="sealText">D&amp;J</text>
       <text x="0" y="6" text-anchor="middle" font-family="Pinyon Script, cursive" font-size="28" fill="#f6e3c0" class="sealText">D&amp;J</text>
       <ellipse cx="-16" cy="-22" rx="26" ry="16" fill="url(#waxShine)" transform="rotate(-25 -16 -22)"/>
     </symbol>
@@ -446,7 +446,7 @@
     <radialGradient id="pCream" cx="50%" cy="0%" r="115%"><stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#f6efe6"/><stop offset="1" stop-color="#cbbba6"/></radialGradient>
     <radialGradient id="pPeach" cx="50%" cy="0%" r="115%"><stop offset="0" stop-color="#fbeed6"/><stop offset=".55" stop-color="#e6cfa6"/><stop offset="1" stop-color="#b39264"/></radialGradient>
     <linearGradient id="pRust" x1="0" x2="1"><stop offset="0" stop-color="#5a0816"/><stop offset=".45" stop-color="#a8182f"/><stop offset="1" stop-color="#e0485f"/></linearGradient>
-    <linearGradient id="satinTail" x1="0" x2="1"><stop offset="0" stop-color="#b8566e"/><stop offset=".35" stop-color="#f4bccb"/><stop offset=".6" stop-color="#d27890"/><stop offset="1" stop-color="#a8485f"/></linearGradient>
+    <linearGradient id="satinTail" x1="0" x2="1"><stop offset="0" stop-color="#a47c3c"/><stop offset=".35" stop-color="#f3dca4"/><stop offset=".6" stop-color="#c9a45c"/><stop offset="1" stop-color="#8a6a32"/></linearGradient>
     <symbol id="bouquet" viewBox="0 0 300 310" overflow="visible"><g id="bouquetG"></g></symbol>
 
 
@@ -459,8 +459,8 @@
       <stop offset=".72" stop-color="#fff6e6"/><stop offset="1" stop-color="#a8865a"/>
     </linearGradient>
     <linearGradient id="satin" x1="0" y1="0" x2="1" y2="-1">
-      <stop offset="0" stop-color="#a8485f"/><stop offset=".18" stop-color="#d27890"/><stop offset=".32" stop-color="#f6c8d3"/>
-      <stop offset=".45" stop-color="#c76580"/><stop offset=".62" stop-color="#eaa3b4"/><stop offset=".8" stop-color="#b8566e"/><stop offset="1" stop-color="#a8485f"/>
+      <stop offset="0" stop-color="#8a6a32"/><stop offset=".18" stop-color="#c9a45c"/><stop offset=".32" stop-color="#f7e3b0"/>
+      <stop offset=".45" stop-color="#b8904a"/><stop offset=".62" stop-color="#e8cc8a"/><stop offset=".8" stop-color="#a47c3c"/><stop offset="1" stop-color="#8a6a32"/>
     </linearGradient>
     <filter id="fray" x="-5%" y="-5%" width="110%" height="110%">
       <feTurbulence type="fractalNoise" baseFrequency=".6 .9" numOctaves="2" seed="3" result="n"/>
@@ -508,7 +508,7 @@
 <!-- ======= CONVITE ======= -->
 <main>
   <section class="hero">
-    <!-- fita de cetim rosé com bordas desfiadas + lacre de cera vermelha -->
+    <!-- fita de cetim dourada com bordas desfiadas + lacre de cera preta -->
     <svg class="ribbon" viewBox="0 0 200 200" aria-hidden="true">
       <g filter="url(#fray)">
         <path d="M70 -6 L128 -6 L206 72 L206 130 Z" fill="url(#satin)"/>
@@ -602,7 +602,7 @@
       <div class="when">Sábado, 10 de abril de 2027 · recepção às 19h, cerimônia às 19h40</div>
       <div class="addr">Rua Lindolfo Collor, 97 · Centro<br>São Leopoldo · RS · 93010-080</div>
       <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Lindolfo+Collor+97+Centro+S%C3%A3o+Leopoldo+RS" target="_blank" rel="noopener">Ver no mapa</a>
-      <div class="dress"><span>Traje</span>Esporte fino</div>
+      <div class="dress"><span>Traje</span>Esporte Fino - Dress Code All Black</div>
       <div class="white-note">
         <span class="wn-title">Um pedido especial</span>
         A cor <strong>branca</strong> é exclusiva da noiva. Pedimos, com carinho, que os convidados evitem branco e tons muito claros como off-white, creme e pérola.
@@ -831,7 +831,7 @@
     el("path", { d: `M${B[0]} ${B[1] + 4} C165 238 158 268 178 302`, stroke: "url(#satinTail)", "stroke-width": 9, fill: "none", filter: "url(#fray)" });
     el("path", { d: `M${B[0] - 2} ${B[1] + 6} C134 244 144 272 120 304`, stroke: "url(#satinTail)", "stroke-width": 8, fill: "none", filter: "url(#fray)" });
     el("rect", { x: B[0] - 21, y: B[1] - 8, width: 42, height: 15, rx: 2, fill: "url(#satin)", filter: "url(#fray)" });
-    el("ellipse", { cx: B[0], cy: B[1], rx: 6, ry: 7, fill: "#c76580" });
+    el("ellipse", { cx: B[0], cy: B[1], rx: 6, ry: 7, fill: "#b8904a" });
   })();
 
   // ===== Fogos de artifício: explosão principal no lacre + estouros menores ao redor =====
